@@ -6,5 +6,10 @@
 			<div class="logo-bottom-left-corner"> </div>
 		</a>
 		<div class="clear" style="clear:both"></div>
-	<div class="logo-container">
+	</div>
+
+	<section>
+		<p>InCube is a small, enterpreneurial community determined to make a dent in the universe.</p>
+		<p>We founded InCube to offer a place for the brave, a place for those that act.</p>
+	</section>
 </aside>

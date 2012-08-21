@@ -5,15 +5,26 @@ body {
 	border-top: 5px solid @blue;
 }
 
+@aside-width: 260px;
 aside {
 	position: fixed;
 	top: 5px;
 	left: 0;
 
 	height: 100%;
-	width: 260px;
+	width: @aside-width;
 	padding-right: 5px;
 	border-right: 1px solid @gray;
 	background-color: white;
 
+	section {
+		position: fixed;
+		bottom: 0;
+		width: 170px;
+		padding: 0px 25px 50px 25px;
+
+		p {
+			line-height: 22px;
+		}
+	}
 }
