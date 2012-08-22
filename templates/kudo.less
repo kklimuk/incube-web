@@ -1,0 +1,55 @@
+@black: #000;
+
+
+//---------
+	// Note: it seems odd, but the best way to keep the transition smooth
+	// is to scale it by 1/3 in the default state
+	// on hover it scales to 1
+	// this way the browser loads the full resolution instead of showing 
+	// bad aliasing during the transition
+//--------
+
+.kudo-container {
+	width: 50px;
+	height: 50px;
+	//border: solid @black 1px;
+	&:hover {
+		cursor: pointer;
+		.kudo-circle {
+			.scale(1); // the circle scales up to cover the whole outline on hover
+		}
+	}
+}
+
+.kudo-circle {
+	position: relative;
+	width: 42px;
+	height: 42px;
+	border-radius: 100%;
+	background-color: @black;
+	top: -1px;
+	left: -1px;
+	.scale(1/3); // the circle starts out scaled down
+	.transition(1.0s, ease-out);
+}
+
+.kudo-outline {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	border: 5px solid @black;
+}
+
+// -------- Mixins. (we need to not duplicate these) ------------
+
+.scale(@ratio:1.5){
+  -webkit-transform:scale(@ratio);
+  -moz-transform:scale(@ratio);
+  transform:scale(@ratio);
+}
+
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
