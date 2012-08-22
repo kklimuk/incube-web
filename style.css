@@ -10,3 +10,6 @@ aside .logo-bottom-left-corner:before{content:"";width:50px;height:25px;backgrou
 body{font-family:"Lucida Grande",Helvetica,"Tahoma MS",proxima-nova,sans-serif;font-size:15px;}
 body{margin:0;border-top:5px solid #00009c;}
 aside{position:fixed;top:5px;left:0;height:100%;width:260px;padding-right:5px;border-right:1px solid #e3e3e3;background-color:white;}aside section{position:fixed;bottom:0;width:170px;padding:0px 25px 50px 25px;}aside section p{line-height:22px;}
+body>article{position:relative;left:250px;}
+body>article>section>article{float:left;}
+body>article>section>article>div{float:left;}

@@ -1,3 +1,3 @@
 <article>
-	<?php include "page/projects.php"; ?>
+	<?php include "pages/projects.php"; ?>
 </article>
