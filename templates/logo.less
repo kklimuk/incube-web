@@ -1,146 +1,93 @@
-aside {
-	@size : 100px;
+.logo(@logo-size: 100px) {
 
-	.logo-container {
-		width: 100px;
-		height: 100px;
-		margin: 25px 0 0 25px;
-	}
+	display: block;
+	float: left;
+	width: @logo-size;
+	height: @logo-size;
+	background-color: transparent;
 
-	.logo {
-		width: @size;
-		height: @size;
-		display: inline-block;
-		background-color: transparent;
-		//border: solid 1px #000000;
-		&:hover {
-			.logo-center {
-				.scale(1.2);
-			}
-			.logo-top-right-corner {
-				left: @size*(3/4) + @size/30;
-				top: (@size/4 - @size/3) - @size/30;
-			}
-			.logo-bottom-left-corner {
-				left: -@size/30;
-				top: (@size/4 - @size/3) + @size/30;
-			}
+	&:hover {
+		.logo-center {
+			width: (@logo-size/3 - 2)*1.2;
+			height: (@logo-size/3 - 2)*1.2;
+			top: @logo-size/3 + ((@logo-size/3 - 1)*1.2-(@logo-size/3 - 1))/2;
+			left: @logo-size/3 - ((@logo-size/3 - 1)*1.2-(@logo-size/3 - 1))/2;
+		}
+
+		.logo-top-right-corner {
+			left: @logo-size*(3/4) + @logo-size/30;
+			top: (@logo-size/4 - @logo-size/3) - @logo-size/30;
+		}
+
+		.logo-bottom-left-corner {
+			left: -@logo-size/30;
+			top: (@logo-size/4 - @logo-size/3) + @logo-size/30;
 		}
 	}
 
-	.logo-center {
-		width: (@size/3)-1;
-		height: (@size/3)-1;
+	> .logo-center {
+		position: relative;
+		top: @logo-size/3;
+		left: @logo-size/3;
+
+		width: (@logo-size/3)-2;
+		height: (@logo-size/3)-2;
+
+		border: 1px solid @blue;
 		background-color: lighten(@blue, 40%);
+
 		.horizontal-gradient(lighten(@blue, 48%), lighten(@blue, 35%));
-		position: relative;
-		top: @size/3;
-		left: @size/3;
-		.transition(.2s, linear);
+		.transition(all 0.2s linear);
 	}
 
-	// bottom part
-	.logo-top-right-corner {
-		width: @size/4;
-		height: @size/4;
-		background-color: @blue;
+	> .logo-top-right-corner {
 		position: relative;
-		top: @size/4 - @size/3;
-		left: @size*(3/4);
-		.border-radius(0, 0, 0, 0);
-		.transition(.2s, linear);
+		top: @logo-size/4 - @logo-size/3;
+		left: @logo-size*(3/4);
+
+		width: @logo-size/4;
+		height: @logo-size/4;
+
+		background-color: @blue;
+		.transition(all 0.2s linear);
 	}
 
-	// top part
-	.logo-top-right-corner:before {
-		content: "";
-		width: @size/2;
-		height: @size/4;
-		background-color: @blue;
+	> .logo-top-right-corner:before {
 		position: absolute;
-		top: -@size/4;
-		left: -@size/4;
-		.border-radius((@size/20), 0, 0, 0);
-		.transition(.2s, linear);
-	}
+		top: -@logo-size/4;
+		left: -@logo-size/4;
 
-	// top part
-	.logo-bottom-left-corner {
-	  width: @size/4;
-	  height: @size/4;
-	  background-color: @blue;
-	  position: relative;
-	  top: @size/4 - @size/3;
-	  left: 0px;
-	  .border-radius(0, 0, 0, 0);
-	  .transition(.2s, linear);
-	}
+		width: @logo-size/2;
+		height: @logo-size/4;
 
-	// bottom part
-	.logo-bottom-left-corner:before {
+		background-color: @blue;
+		.border-radius((@logo-size/20), 0, 0, 0);
+		.transition(all 0.2s linear);
 		content: "";
-	  width: @size/2;
-	  height: @size/4;
-	  background-color: @blue;
-	  position: absolute;
-	  top: @size/4;
-	  left: 0px;
-	  .border-radius(0, 0, (@size/20), 0);
-	  .transition(.2s, linear);
 	}
 
+	> .logo-bottom-left-corner {
+		position: relative;
+		top: @logo-size/4 - @logo-size/3;
+		left: 0px;
 
-	//-------- Useful mixins ---------
-	.rounded(@radius: 2px) {
-	  -webkit-border-radius: @radius;
-	  -moz-border-radius: @radius;
-	  border-radius: @radius;
-	  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+		width: @logo-size/4;
+		height: @logo-size/4;
+		background-color: @blue;
+
+		.transition(all 0.2s linear);
 	}
 
-	.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
-	  -webkit-border-top-right-radius: @topright;
-	  -webkit-border-bottom-right-radius: @bottomright;
-	  -webkit-border-bottom-left-radius: @bottomleft;
-	  -webkit-border-top-left-radius: @topleft;
-	  -moz-border-radius-topright: @topright;
-	  -moz-border-radius-bottomright: @bottomright;
-	  -moz-border-radius-bottomleft: @bottomleft;
-	  -moz-border-radius-topleft: @topleft;
-	  border-top-right-radius: @topright;
-	  border-bottom-right-radius: @bottomright;
-	  border-bottom-left-radius: @bottomleft;
-	  border-top-left-radius: @topleft;
-	  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
-	}
+	> .logo-bottom-left-corner:before {
+		position: absolute;
+		top: @logo-size/4;
+		left: 0px;
 
-	.horizontal-gradient(@startColor: #555, @endColor: #333) {
-		background-color: @endColor;
-		background-repeat: no-repeat;
-		background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
-		background-image: -webkit-linear-gradient(right center, @startColor, @endColor);
-		background-image: -moz-linear-gradient(right center, @startColor, @endColor);
-		background-image: -o-linear-gradient(left,  @startColor,  @endColor);
-		background-image: -khtml-gradient(linear, left top, right top, from(@startColor), to(@endColor));
-		filter: e(%("progid:DXImageTransform.Microsoft.Gradient(StartColorStr='%d', EndColorStr='%d', GradientType=1)",@startColor,@endColor));
-		-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorStr='%d', EndColorStr='%d', GradientType=1))",@startColor,@endColor);
-	}
+		width: @logo-size/2;
+		height: @logo-size/4;
+		background-color: @blue;
+		content: "";
 
-	.scale(@ratio:1.5){
-	  -webkit-transform:scale(@ratio);
-	  -moz-transform:scale(@ratio);
-	  transform:scale(@ratio);
-	}
-
-	.transition(@duration:0.2s, @ease:ease-out) {
-	  -webkit-transition: all @duration @ease;
-	  -moz-transition: all @duration @ease;
-	  transition: all @duration @ease;
-	}
-
-	.box-shadow(@arguments) {
-	  -webkit-box-shadow: @arguments;
-	  -moz-box-shadow: @arguments;
-	  box-shadow: @arguments;
+		.border-radius(0, 0, (@logo-size/20), 0);
 	}
 }

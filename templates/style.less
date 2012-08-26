@@ -3,9 +3,16 @@
 body {
 	margin: 0;
 	border-top: 5px solid @blue;
+	color: @black;
 }
 
-@aside-width: 260px;
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+@aside-width: 270px;
 aside {
 	position: fixed;
 	top: 5px;
@@ -17,22 +24,44 @@ aside {
 	border-right: 1px solid @gray;
 	background-color: white;
 
+	> a {
+		width: 100px;
+		height: 100px;
+		margin: 25px 0 0 25px;
+
+		.logo;
+	}
+
 	section {
 		position: fixed;
 		bottom: 0;
 		width: 170px;
-		padding: 0px 25px 50px 25px;
+		padding: 0px 25px 30px 25px;
+
+		a {
+			border: none;
+			color: @black;
+
+			img {
+				float: left;
+				margin-right: 10px;
+			}
+
+			h1 {
+				float: left;
+				font-size: 18px;
+				line-height: 28px;
+			}
+		}
 
 		p {
 			line-height: 22px;
+			color: @darkGray;
 		}
 	}
 }
 
 body > article {
 	position: relative;
-	left: 250px;
+	left: @aside-width + 10;
 }
-
-// page specific styles
-@import "items.less";
