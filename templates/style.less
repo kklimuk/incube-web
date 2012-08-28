@@ -2,7 +2,6 @@
 
 body {
 	margin: 0;
-	border-top: 5px solid @blue;
 	color: @black;
 }
 
@@ -13,13 +12,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @aside-width: 270px;
-aside {
+body > aside {
 	position: fixed;
 	top: 5px;
 	left: 0;
 
 	height: 100%;
 	width: @aside-width;
+	box-sizing: border-box;
 	padding-right: 5px;
 	border-right: 1px solid @gray;
 	background-color: white;
@@ -52,6 +52,10 @@ aside {
 				font-size: 18px;
 				line-height: 28px;
 			}
+
+			&:hover {
+				color: @blue;
+			}
 		}
 
 		p {
@@ -61,7 +65,246 @@ aside {
 	}
 }
 
+body > .top-bar {
+	position: fixed;
+	z-index: 101;
+	top: 0px;
+	height: 5px;
+	width: 100%;
+	background: @blue;
+}
+
 body > article {
-	position: relative;
-	left: @aside-width + 10;
+	margin-left: @aside-width;
+	min-width: 960px - @aside-width;
+
+	> header {
+		position: relative;
+		height: 300px;
+		padding: 25px;
+		box-sizing: border-box;
+
+		border-bottom: 1px solid @gray;
+
+		> .options {
+			position: relative;
+
+			display: block;
+			float: right;
+			width: 60px;
+			height: 35px;
+
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			line-height: 36px;
+
+			background-color: @blue;
+			.rounded(5px);
+
+			&:hover {
+				height: 50px;
+
+				.dropdown {
+					display: block;
+				}
+			}
+
+			> .dropdown {
+				display: none;
+				z-index: 100;
+
+				position: absolute;
+				top: 38px;
+				left: -160px;
+				width: 220px;
+				height: 100px;
+
+				text-align: center;
+				font-size: 18px;
+				line-height: 50px;
+
+				background-color: @blue;
+				.rounded(5px);
+
+				a {
+					display: block;
+					height: 50px;
+
+					color: white;
+					text-decoration: none;
+
+					&:hover {
+						background-color: lighten(@blue, 10%);
+						.rounded(5px);
+					}
+				}
+
+				div {
+					height: 50px;
+					color: white;
+				}
+			}
+		}
+
+		> .contact {
+			display: block;
+			float: right;
+			height: 35px;
+			width: 35px;
+			margin-right: 5px;
+
+			background: @blue no-repeat 1px 1px;
+			.rounded(5px);
+
+			&.email {
+				background-image: url(/wp-content/themes/incube/img/white_email.png);
+			}
+
+			&.twitter {
+				background-image: url(/wp-content/themes/incube/img/white_twitter_bird.png);
+			}
+
+			&.facebook {
+				background-image: url(/wp-content/themes/incube/img/white_facebook.png);
+			}
+
+			&.heart {
+				background-image: url(/wp-content/themes/incube/img/white_heart.png);
+			}
+
+			&:hover {
+				background-color: lighten(@blue, 10%);
+			}
+		}
+
+		hgroup {
+			position: absolute;
+			bottom: 0;
+			padding-bottom: 25px;
+
+			h1 {
+				font-size: 72px;
+			}
+
+			h2 {
+				float: left;
+				padding-right: 30px;
+
+				a {
+					color: @black;
+					text-decoration: none;
+
+					&:hover {
+						color: @blue;
+					}
+				}
+			}
+		}
+	}
+
+	> section {
+
+		> h1 {
+			height: 100px;
+			padding: 0 25px 0 25px;
+
+			font-size: 36px;
+			line-height: 100px;
+			text-transform: uppercase;
+
+			border-bottom: 1px solid @gray;
+		}
+
+		> article {
+			height: 100px;
+			padding: 25px;
+			border-bottom: 1px solid @gray;
+			border-right: 5px solid;
+
+			&:hover {
+				a {
+					color: white;
+				}
+			}
+
+			.info-holder {
+				h1 {
+					font-size: 24px;
+				}
+
+				div {
+					width: 600px;
+				}
+			}
+
+			&:nth-child(4n+3) {
+				border-right-color: @blue;
+				img,iframe {
+					border: 2px solid @blue;
+				}
+
+				&:hover {
+					background-color: @blue;
+				}
+			}
+
+			&:nth-child(4n) {
+				border-right-color: @green;
+				img,iframe {
+					border: 2px solid @green;
+				}
+
+				&:hover {
+					background-color: @green;
+				}
+			}
+
+			&:nth-child(4n+1) {
+				border-right-color: @orange;
+				img,iframe {
+					border: 2px solid @orange;
+				}
+
+				&:hover {
+					background-color: @orange;
+				}
+			}
+
+			&:nth-child(4n+2) {
+				border-right-color: @purple;
+				img,iframe {
+					border: 2px solid @purple;
+				}
+
+				&:hover {
+					background-color: @purple;
+				}
+			}
+
+			.img-holder {
+				float: left;
+				width: 150px;
+				height: 100px;
+
+				img {
+					height: 100px;
+					max-width: 133px;
+				}
+			}
+
+			a {
+				color: @black;
+				text-decoration: none;
+
+				&:after {
+					display: table;
+					clear: both;
+					content: '';
+				}
+			}
+		}
+
+	}
+
 }
