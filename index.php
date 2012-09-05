@@ -11,7 +11,6 @@
 	<div class="totop">
 		&#8593;
 	</div>
-
 	<aside>
 	<?php
 		get_sidebar();
@@ -22,6 +21,8 @@
 		<?php
 			if (is_front_page()):
 				include "front_page.php";
+			elseif (have_posts()):
+				include "pages/single.php";
 			endif;
 		?>
 	</article>
