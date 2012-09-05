@@ -5,7 +5,7 @@
 </a>
 
 <section>
-	<p>InCube is a small, enterpreneurial community determined to make a dent in the universe.</p>
+	<p>InCube is a small, student-run, enterpreneurial community determined to make a dent in the universe.</p>
 	<p>We founded InCube to offer a place for the curious, a place for those that act.</p>
 	<a href="/">
 		<img src="<?php bloginfo('template_directory'); ?>/img/logo_sm.png" width="28" height="28"/>

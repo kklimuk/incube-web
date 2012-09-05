@@ -4,7 +4,7 @@
 		&#9660;
 		<div class="dropdown">
 			<a href="/">apply</a>
-			<a href="/wp-login">log in</a>
+			<a href="/wp-login.php">log in</a>
 		</div>
 	</div>
 
@@ -23,15 +23,29 @@
 
 	<hgroup>
 		<h1>incube</h1>
-		<h2><a href="#projects">projects</a></h2>
 		<h2><a href="#startups">startups</a></h2>
+		<h2><a href="#projects">projects</a></h2>
 		<h2><a href="#advisors">advisors</a></h2>
 		<h2><a href="#advisors">members</a></h2>
 	</hgroup>
 </header>
 
 <section>
+	<a name="startups"></a>
+	<h1>startups</h1>
+	<?php include "pages/startups.php"; ?>
+
 	<a name="projects"></a>
 	<h1>projects</h1>
 	<?php include "pages/projects.php"; ?>
+
+	<a name="advisors"></a>
+	<h1>advisory board</h1>
+	<?php include "pages/board.php"; ?>
+	<h1>administration advisors</h1>
+	<?php include "pages/admin.php"; ?>
+
+	<a name="members"></a>
+	<h1>members</h1>
+	<?php include "pages/members.php"; ?>
 </section>

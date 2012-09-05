@@ -24,3 +24,5 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/totop.js"></script>

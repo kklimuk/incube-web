@@ -8,6 +8,10 @@
 <body>
 	<div class="top-bar"></div>
 
+	<div class="totop">
+		&#8593;
+	</div>
+
 	<aside>
 	<?php
 		get_sidebar();

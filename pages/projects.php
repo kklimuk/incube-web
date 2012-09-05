@@ -37,7 +37,7 @@
 <article>
 	<a href="http://summerinnovationprogram.org/" target="_blank">
 		<div class="img-holder">
-			<img src="<?php bloginfo('template_directory'); ?>/img/summer.png"/>
+			<img src="https://sphotos-a.xx.fbcdn.net/hphotos-snc7/304957_10151011063217407_547577522_n.jpg"/>
 		</div>
 
 		<div class="info-holder">
@@ -46,7 +46,25 @@
 			</h1>
 			<div>
 				Partnering with DuHatch, we started a program that lets students work on their startups over the summer.
-				We provide the office, living space, and guidance, along with a stipend of $5000.
+				We provide the office, living space, guidance, anda stipend of $5000.
+			</div>
+		</div>
+	</a>
+</article>
+
+<article>
+	<a href="https://www.facebook.com/groups/dukewebdevcourse/" target="_blank">
+		<div class="img-holder">
+			<img src="http://bloximages.newyork1.vip.townnews.com/thonline.com/content/tncms/assets/v3/editorial/9/b1/9b114edb-2988-549b-bcd6-6424400464e3/4fb41f3cb5371.image.jpg"/>
+		</div>
+
+		<div class="info-holder">
+			<h1>
+				Web Development House Course
+			</h1>
+			<div>
+				Duke Computer Science doesn't normally offer web development classes.
+				We decided to fix that and give students some of our industry expertise.
 			</div>
 		</div>
 	</a>
