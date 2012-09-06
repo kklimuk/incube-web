@@ -345,16 +345,16 @@ body > article > header > .contact {
   border-radius: 5px;
 }
 body > article > header > .contact.email {
-  background-image: url(/wp-content/themes/incube/img/white_email.png);
+  background-image: url(/wp-content/themes/incube-web/img/white_email.png);
 }
 body > article > header > .contact.twitter {
-  background-image: url(/wp-content/themes/incube/img/white_twitter_bird.png);
+  background-image: url(/wp-content/themes/incube-web/img/white_twitter_bird.png);
 }
 body > article > header > .contact.facebook {
-  background-image: url(/wp-content/themes/incube/img/white_facebook.png);
+  background-image: url(/wp-content/themes/incube-web/img/white_facebook.png);
 }
 body > article > header > .contact.heart {
-  background-image: url(/wp-content/themes/incube/img/white_heart.png);
+  background-image: url(/wp-content/themes/incube-web/img/white_heart.png);
 }
 body > article > header > .contact:hover {
   background-color: #0000cf;
