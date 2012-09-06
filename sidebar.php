@@ -19,7 +19,7 @@ endif;
 if ($isUser):
 ?>
 
-<a href="/?author=<?=$curauth->ID?>">
+<a href="/">
 	<?=get_avatar($curauth->ID, 100)?>
 </a>
 
