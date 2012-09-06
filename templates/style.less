@@ -25,16 +25,34 @@ body > aside {
 	background-color: white;
 
 	> a {
+		display: block;
 		width: 100px;
 		height: 100px;
 		margin: 25px 0 0 25px;
 
-		.logo;
+		&.coologo {
+			.logo;
+		}
 	}
-	
-	> div.author {
-		margin-top: 192px;
-		margin-left: 25px;
+
+	> hgroup {
+		margin: 10px 0 0 25px;
+
+		h2 {
+			font-size: 14px;
+			margin: 5px 0;
+
+			a {
+				color: @black;
+				border-bottom: 1px dashed @black;
+				text-decoration: none;
+
+				&:hover {
+					color: @blue;
+					border-bottom-color: @blue;
+				}
+			}
+		}
 	}
 
 	section {
@@ -109,24 +127,73 @@ body > .top-bar {
 body > article {
 	margin-left: @aside-width;
 	min-width: 960px - @aside-width;
-	
-	.blog_header {
-		line-height: 50px;
-		height: 100px;
-		h2 {
-			font-size: 13px;
-			margin-left: 10px;
+
+	> hgroup {
+		border-bottom: 1px solid @gray;
+
+		&.padded {
+			padding: 25px 0px 25px 25px;
 		}
-	}
-	> article {
-	padding: 50px 25px 25px 35px;
-	width: 600px;	
-		> h2 {
-			padding-bottom: 25px;
+
+		a {
+			display: block;
+			padding: 25px 0px 25px 25px;
+			border-right: 5px solid @blue;
+
+			color: @black;
+			text-decoration: none;
+
+			&:hover {
+				color: white;
+				background-color: @blue;
+			}
+		}
+
+		h1 {
+			font-size: 36px;
+		}
+
+		h2 {
 			font-size: 14px;
 		}
+
 	}
-	
+
+	> article {
+		box-sizing: border-box;
+		min-height: 200px;
+		padding: 25px 0px 25px 25px;
+
+		border-bottom: 1px solid @gray;
+
+		> .content {
+			width: 600px;
+			line-height: 150%;
+
+			h1 {
+				font-size: 24px;
+			}
+
+			h2 {
+				font-size: 20px;
+			}
+
+			h3 {
+				font-size: 16px;
+			}
+
+			a {
+				color: @black;
+				text-decoration: none;
+				border-bottom: 1px dashed @black;
+
+				&:hover {
+					color: @blue;
+				}
+			}
+		}
+	}
+
 	> header {
 		position: relative;
 		height: 300px;
@@ -134,7 +201,11 @@ body > article {
 		box-sizing: border-box;
 
 		border-bottom: 1px solid @gray;
-		
+
+		&.small {
+			height: 100px;
+			line-height: 50px;
+		}
 
 		> .options {
 			position: relative;
@@ -194,7 +265,7 @@ body > article {
 					height: 50px;
 					color: white;
 				}
-				
+
 			}
 		}
 

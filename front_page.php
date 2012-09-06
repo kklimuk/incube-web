@@ -26,7 +26,7 @@
 		<h2><a href="#startups">startups</a></h2>
 		<h2><a href="#projects">projects</a></h2>
 		<h2><a href="#advisors">advisors</a></h2>
-		<h2><a href="#advisors">members</a></h2>
+		<h2><a href="#members">members</a></h2>
 	</hgroup>
 </header>
 
