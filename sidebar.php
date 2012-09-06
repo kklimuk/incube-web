@@ -55,7 +55,7 @@ endif;
 	<?php
 	if (!$isUser):
 	?>
-		<p>InCube is a small, student-run, enterpreneurial community determined to make a dent in the universe.</p>
+		<p>InCube is a student-run, enterpreneurial residential program determined to make a dent in the universe.</p>
 		<p>We founded InCube to offer a place for the curious, a place for those that act.</p>
 	<?php
 	else:

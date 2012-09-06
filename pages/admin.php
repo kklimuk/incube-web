@@ -50,6 +50,23 @@
 </article>
 
 <article>
+	<a href="http://www.linkedin.com/in/howierhee" target="_blank">
+		<div class="img-holder">
+			<img src="http://4.bp.blogspot.com/_Wwag4vmmk4I/SjpLsHz3rGI/AAAAAAAAFkY/WTvdQdRKUQs/S220-h/headshot-v2-200x200.jpg"/>
+		</div>
+
+		<div class="info-holder">
+			<h1>
+				Howie Rhee
+			</h1>
+			<div>
+				Howie was with us in the beginning as well and works with us, connecting the living and working components of the Duke entrepreneurial scene.
+			</div>
+		</div>
+	</a>
+</article>
+
+<article>
 	<a href="http://today.duke.edu/showcase/entrepreneurship/jenkins.html" target="_blank">
 		<div class="img-holder">
 			<img src="http://memp.pratt.duke.edu/sites/memp.pratt.duke.edu/files/2f006_160310_duhatch085.jpg"/>
