@@ -30,6 +30,8 @@ while ( have_posts() ) :
 	<div class="content">
 		<?php the_content(); ?>
 	</div>
+
+	<div class="fb-comments" data-href="http://incube.us?p=<?=get_the_ID();?>" data-num-posts="2" data-width="600"></div>
 </article>
 
 <?php

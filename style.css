@@ -250,6 +250,7 @@ body > article > article {
 }
 body > article > article > .content {
   width: 600px;
+  margin-bottom: 25px;
   line-height: 150%;
 }
 body > article > article > .content h1 {

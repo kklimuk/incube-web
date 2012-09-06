@@ -6,6 +6,8 @@
 ?>
 </head>
 <body>
+	<div id="fb-root"></div>
+
 	<div class="top-bar"></div>
 
 	<div class="totop">
@@ -21,8 +23,6 @@
 		<?php
 			if (is_front_page()):
 				include "front_page.php";
-			elseif (have_posts()):
-				include "pages/single.php";
 			endif;
 		?>
 	</article>
