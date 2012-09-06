@@ -52,7 +52,7 @@
 <article>
 	<a href="http://www.linkedin.com/in/howierhee" target="_blank">
 		<div class="img-holder">
-			<img src="http://4.bp.blogspot.com/_Wwag4vmmk4I/SjpLsHz3rGI/AAAAAAAAFkY/WTvdQdRKUQs/S220-h/headshot-v2-200x200.jpg"/>
+			<img src="http://m4.licdn.com/media/p/2/000/023/305/370170e.jpg"/>
 		</div>
 
 		<div class="info-holder">
