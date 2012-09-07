@@ -60,7 +60,7 @@
 				Howie Rhee
 			</h1>
 			<div>
-				Howie was with us in the beginning as well and works with us, connecting the living and working components of the Duke entrepreneurial scene.
+				Howie was part of the initial InCube brainstorm and also significantly contributed to the growth of InCube in our early days. We continue to work together to create a passionate entrepreneurial culture at Duke.
 			</div>
 		</div>
 	</a>
