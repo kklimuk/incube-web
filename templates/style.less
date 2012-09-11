@@ -352,9 +352,19 @@ body > article {
 			}
 			.info-holder {
 				h1 {
+					white-space: nowrap;
+					width: 600px;
+					overflow: hidden;
+					text-overflow: ellipsis;
 					font-size: 24px;
+
 					span {
 						font-size: 18px;
+					}
+
+					&.padded {
+						height: inherit;
+						line-height: 100px;
 					}
 				}
 

@@ -17,9 +17,13 @@ endif;
 
 <?php
 if ($isUser):
+	$return_url = "/";
+	if (is_single()):
+		$return_url = "/?author={$curauth->ID}";
+	endif;
 ?>
 
-<a href="/">
+<a href="<?=$return_url?>">
 	<?=get_avatar($curauth->ID, 100)?>
 </a>
 

@@ -397,10 +397,18 @@ body > article > section > article:hover a {
   color: white;
 }
 body > article > section > article .info-holder h1 {
+  white-space: nowrap;
+  width: 600px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 24px;
 }
 body > article > section > article .info-holder h1 span {
   font-size: 18px;
+}
+body > article > section > article .info-holder h1.padded {
+  height: inherit;
+  line-height: 100px;
 }
 body > article > section > article .info-holder div {
   width: 600px;
