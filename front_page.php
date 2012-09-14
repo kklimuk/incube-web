@@ -23,14 +23,18 @@
 
 	<hgroup>
 		<h1>incube</h1>
+		<h2><a href="#members">members</a></h2>
 		<h2><a href="#startups">startups</a></h2>
 		<h2><a href="#projects">projects</a></h2>
 		<h2><a href="#advisors">advisors</a></h2>
-		<h2><a href="#members">members</a></h2>
 	</hgroup>
 </header>
 
 <section>
+	<a name="members"></a>
+	<h1>members</h1>
+	<?php include "pages/members.php"; ?>
+
 	<a name="startups"></a>
 	<h1>startups</h1>
 	<?php include "pages/startups.php"; ?>
@@ -45,7 +49,4 @@
 	<h1>administration advisors</h1>
 	<?php include "pages/admin.php"; ?>
 
-	<a name="members"></a>
-	<h1>members</h1>
-	<?php include "pages/members.php"; ?>
 </section>
