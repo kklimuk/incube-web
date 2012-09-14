@@ -1,6 +1,6 @@
 <?php
 global $wpdb;
-$query = "SELECT DISTINCT ID, post_title FROM ((SELECT wp_users.ID AS ID, post_title, post_date_gmt FROM wp_users, wp_posts WHERE post_status = 'publish' AND post_author=wp_users.id  ORDER BY post_date_gmt DESC) UNION (SELECT ID, '' AS post_title, '1800-01-01' AS post_date_gmt FROM wp_users)) AS members GROUP BY ID ORDER BY post_date_gmt DESC;";
+$query = "SELECT DISTINCT ID, (SELECT post_title FROM wp_posts WHERE ID=members.ID AND post_date_gmt=members.post_date_gmt) AS post_title FROM ((SELECT wp_users.ID AS ID, post_date_gmt FROM wp_users, wp_posts WHERE post_status = 'publish' AND post_author=wp_users.id  ORDER BY post_date_gmt DESC) UNION (SELECT ID, '1800-01-01' AS post_date_gmt FROM wp_users)) AS members GROUP BY ID ORDER BY post_date_gmt DESC;";
 $authors = $wpdb->get_results($query);
 
 foreach($authors as $author) :
