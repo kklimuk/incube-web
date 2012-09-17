@@ -15,7 +15,7 @@
 	<a href="mailto:scottkelly1@gmail.com" class="contact email">
 	</a>
 
-	<a href="https://www.facebook.com/groups/dukeincube/" class="contact facebook" target="_blank">
+	<a href="https://www.facebook.com/dukeincube" class="contact facebook" target="_blank">
 	</a>
 
 	<a href="https://twitter.com/dukeincube" class="contact twitter" target="_blank">
