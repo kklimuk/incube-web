@@ -3,7 +3,7 @@
 	<div href="javascript:void(0)" class="options">
 		&#9660;
 		<div class="dropdown">
-			<a href="/">apply</a>
+			<a href="https://docs.google.com/spreadsheet/viewform?formkey=dEJPR0lUWWw3WFNEVVE0OV9laTd6LUE6MQ#gid=0">apply</a>
 			<a href="/wp-login.php">log in</a>
 		</div>
 	</div>
