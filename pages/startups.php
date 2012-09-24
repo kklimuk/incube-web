@@ -36,15 +36,15 @@
 <article>
 	<a href="http://neoteach.com/" target="_blank">
 		<div class="img-holder">
-			<img src="https://sphotos-b.xx.fbcdn.net/hphotos-snc6/185941_270176363091736_1497749365_n.jpg"/>
+			<img src="https://sphotos-a.xx.fbcdn.net/hphotos-ash3/564778_288549641254408_1587643398_n.png"/>
 		</div>
 
 		<div class="info-holder">
 			<h1>
-				NeoTeach <span> - Alex Browne </span>
+				CrowdCourse <span> - Alex Browne </span>
 			</h1>
 			<div>
-				NeoTeach is a community-driven educational website.
+				CrowdCourse is a community-driven educational website.
 				It focuses on helping you learn quickly and effectively.
 			</div>
 		</div>
