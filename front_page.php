@@ -23,11 +23,17 @@
 
 	<hgroup>
 		<h1>incube</h1>
+
 		<h2><a href="#members">members</a></h2>
 		<h2><a href="#startups">startups</a></h2>
 		<h2><a href="#projects">projects</a></h2>
 		<h2><a href="#advisors">advisors</a></h2>
+
+		<h3>
+			<a href="http://eepurl.com/smEpL" target="_blank">Sign up for our recruitment newsletter</a>
+		</h3>
 	</hgroup>
+
 </header>
 
 <section>
